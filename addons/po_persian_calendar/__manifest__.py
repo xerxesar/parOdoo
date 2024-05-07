@@ -19,6 +19,17 @@
     ],
     'depends': ['web'
     ],
+    "assets": {
+        "web.assets_common": [
+            (
+                "replace",
+                "web/static/lib/moment/moment.js",
+                "po_persian_calendar/static/src/js/moment-jalaali.js",
+            ),
+            "web/static/src/js/core/time.js",
+            "web/static/lib/tempusdominus/tempusdominus.js",
+        ]
+    },
     'data': [
         'views/templates.xml',
         'views/UserPreferences_Views.xml',
